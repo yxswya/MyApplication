@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <div id="root">ahui</div>
-        <script type="module" src="./index.ts"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwindcss">
+</head>
+
+<body>
+    <div class="h-screen flex justify-center items-center flex-col gap-5">
+        <ul class="flex justify-center items-center gap-5">
+            <li
+                class="cursor-pointer w-10 h-10 rounded-full bg-[#f0f0f0] duration-300 hover:bg-[#e0e0e0] flex items-center justify-center">
+                <a href="/public/movies/index.html">
+                    <i class="w-5 h-5 text-[#333333]" data-lucide="anchor"></i>
+                </a>
+            </li>
+            <li
+                class="cursor-pointer w-10 h-10 rounded-full bg-[#f0f0f0] duration-300 hover:bg-[#e0e0e0] flex items-center justify-center">
+                <a href="/public/movies/index.html">
+                    <i class="w-5 h-5 text-[#333333]" data-lucide="menu"></i>
+                </a>
+            </li>
+            <li
+                class="cursor-pointer w-10 h-10 rounded-full bg-[#f0f0f0] duration-300 hover:bg-[#e0e0e0] flex items-center justify-center">
+                <a href="/public/movies/index.html">
+                    <i class="w-5 h-5 text-[#333333]" data-lucide="clapperboard"></i>
+                </a>
+            </li>
+            <li
+                class="cursor-pointer w-10 h-10 rounded-full bg-[#f0f0f0] duration-300 hover:bg-[#e0e0e0] flex items-center justify-center">
+                <a href="/public/movies/index.html">
+                    <i class="w-5 h-5 text-[#333333]" data-lucide="notebook-text"></i>
+                </a>
+            </li>
+        </ul>
+        <h1 class="text-[58px] italic font-bold">My Application</h1>
+    </div>
+    <script type="module" src="./index.ts"></script>
+</body>
+
 </html>
