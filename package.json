@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run ./src/index.ts --host"
+    "dev": "bun run --host ./src/index.ts"
   },
   "devDependencies": {
     "@elysiajs/cors": "^1.4.1",
@@ -12,7 +12,8 @@
     "@elysiajs/html": "^1.4.0",
     "@types/bun": "latest",
     "bun-plugin-tailwind": "^0.1.2",
-    "elysia": "^1.4.26"
+    "elysia": "^1.4.26",
+    "rss-parser": "^3.13.0"
   },
   "peerDependencies": {
     "typescript": "^5"
