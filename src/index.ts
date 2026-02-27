@@ -4,7 +4,9 @@ import { staticPlugin } from '@elysiajs/static'
 
 const app = new Elysia()
     .use(cors())
-    .use(staticPlugin())
+    .use(staticPlugin({
+        prefix: '/',
+    }))
     .ws("/chat", {
         body: t.String(),
         response: t.String(),
